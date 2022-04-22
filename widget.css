@@ -1,0 +1,50 @@
+/** Importe ta typo préférée : **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif !important; /** Pense à personnaliser avec ta typo ! **/
+    letter-spacing: 0.025em;
+}
+
+body {
+    background-color: transparent;
+}
+
+.reveal {
+    color: {{fontColor}} !important;
+    background: #93c045 !important;
+}
+
+section > div {
+    font-size: 4.5rem !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+section > div.big {
+    font-size: 8rem !important;
+}
+
+section > ul, section > p {
+    font-size: 3rem !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+}
+
+section > ul {
+    max-width: 80rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+    list-style: none;
+}
+
+section > ul > li {
+    display: inline-block;
+    margin: 1rem 1.5rem !important;
+}
+
+.playback {
+    display: none;
+}

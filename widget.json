@@ -1,0 +1,47 @@
+{
+  "startTitle": {
+    "type": "text",
+    "value": "Thanks for watching!",
+    "label": "Start title"
+  },
+  "endTitle": {
+    "type": "text",
+    "value": "See you soon",
+    "label": "End title"
+  },
+  "followersTitle": {
+    "type": "text",
+    "value": "Latest followers",
+    "label": "Followers title"
+  },
+  "subscribersTitle": {
+    "type": "text",
+    "value": "Latest subscribers",
+    "label": "Subscribers title"
+  },
+  "raidsTitle": {
+    "type": "text",
+    "value": "Latest raids",
+    "label": "Raids title"
+  },
+  "tipsTitle": {
+    "type": "text",
+    "value": "Latest tips",
+    "label": "Tips title"
+  },
+  "slideDuration": {
+    "type": "text",
+    "value": "1",
+    "label": "Slide duration (seconds)",
+    "min": 1
+  },
+  "backgroundImage": {
+    "type": "image-input",
+    "label": "Background image"
+  },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Font color",
+    "value": "rgb(0, 0, 0)"
+  }
+}
