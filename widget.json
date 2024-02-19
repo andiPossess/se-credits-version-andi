@@ -1,39 +1,135 @@
 {
+  "titleFont":{
+    "type":"googleFont",
+    "value":"Roboto",
+    "label":"Credits title font name",
+    "group":"Font Settings"
+  },
+  "titleSize":{
+    "type": "number",
+    "label": "Credits title font size",
+    "value": 130,
+    "min": 1,
+    "step": 1,
+    "group":"Font Settings"
+  }, 
+  "sectionFont":{
+    "type":"googleFont",
+    "value":"Roboto",
+    "label":"Section title font name",
+    "group":"Font Settings"
+  },
+  "sectionSize":{
+    "type": "number",
+    "label": "Section title font size",
+    "value": 72,
+    "min": 1,
+    "step": 1,
+    "group":"Font Settings"
+  },  
+  "namesFont":{
+    "type":"googleFont",
+    "value":"Roboto",
+    "label":"Credits font name",
+    "group":"Font Settings"
+  },
+  "namesSize":{
+    "type": "number",
+    "label": "Credits font size",
+    "value": 36,
+    "min": 1,
+    "step": 1,
+    "group":"Font Settings"
+  },
+  "namesSpacing":{
+    "type": "number",
+    "label": "Credits spacing",
+    "value": 0,
+    "step": 1,
+    "group":"Font Settings"
+  },
+  "startEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display start card"
+  },
   "startTitle": {
     "type": "text",
     "value": "Thanks for watching!",
     "label": "Start title"
+  },
+  "endEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display end card"
   },
   "endTitle": {
     "type": "text",
     "value": "See you soon",
     "label": "End title"
   },
+  "followerEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display followers"
+  },
   "followersTitle": {
     "type": "text",
     "value": "Latest followers",
     "label": "Followers title"
+  },
+  "subscriberEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display subscribers"
   },
   "subscribersTitle": {
     "type": "text",
     "value": "Latest subscribers",
     "label": "Subscribers title"
   },
-  "raidsTitle": {
-    "type": "text",
-    "value": "Latest raids",
-    "label": "Raids title"
+  "tipEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display tips"
   },
   "tipsTitle": {
     "type": "text",
     "value": "Latest tips",
     "label": "Tips title"
   },
+  "cheerEnabled": {
+    "type": "checkbox",
+    "value": true,
+    "label": "Display cheers"
+  },
+  "cheersTitle": {
+    "type": "text",
+    "value": "Latest cheers",
+    "label": "Cheers title"
+  },
+  "maxNames": {
+    "type": "number",
+    "label": "Names per slide",
+    "value": 26,
+    "min": 1,
+    "step": 1
+  },
   "slideDuration": {
     "type": "text",
-    "value": "1",
+    "value": "4",
     "label": "Slide duration (seconds)",
     "min": 1
+  },
+  "currencyPrefix": {
+    "type": "text",
+    "value": "$",
+    "label": "Currency prefix"
+  },
+  "currencyPostfix": {
+    "type": "text",
+    "value": "",
+    "label": "Currency postfix"
   },
   "backgroundImage": {
     "type": "image-input",
@@ -43,5 +139,10 @@
     "type": "colorpicker",
     "label": "Font color",
     "value": "rgb(0, 0, 0)"
+  },
+  "bgColor": {
+    "type": "colorpicker",
+    "label": "BG Color",
+    "value": "transparent"
   }
 }

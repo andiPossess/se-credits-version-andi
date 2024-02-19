@@ -1,50 +1,103 @@
-/** Importe ta typo préférée : **/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
 * {
-    font-family: 'Roboto', sans-serif !important; /** Pense à personnaliser avec ta typo ! **/
     letter-spacing: 0.025em;
 }
 
+.slides {
+    display: grid !important;
+    height: 100% !important;
+    width: 100% !important;
+    zoom: 1 !important;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
 body {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .reveal {
     color: {{fontColor}} !important;
-    background: #93c045 !important;
+
+    background: {{bgColor}} !important;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
 }
 
-section > div {
-    font-size: 4.5rem !important;
+section {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+}
+
+section > .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+section > div.big {
+    font-size: {{titleSize}}px !important;
+    font-family: '{{titleFont}}' !important;
+    font-weight: 900 !important;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 100%;
+    line-height: initial;
+}
+
+section > div.big > h1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    justify-self: center;
+    align-self: center;
+}
+
+section .section-title {
+    font-family: '{{sectionFont}}' !important;
+
+    font-size: {{sectionSize}}px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
     margin-bottom: 1.5rem !important;
 }
 
-section > div.big {
-    font-size: 8rem !important;
+section .names {
+    font-family: '{{namesFont}}' !important;
 }
 
-section > ul, section > p {
-    font-size: 3rem !important;
-    line-height: 1 !important;
+section ul,
+section > p {
+    font-size: {{namesSize}}px !important;
+    line-height: 1em !important;
     font-weight: 700 !important;
 }
 
-section > ul {
-    max-width: 80rem;
+section ul {
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 0;
     list-style: none;
+
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-section > ul > li {
+section ul > li {
     display: inline-block;
-    margin: 1rem 1.5rem !important;
+
+    margin: calc({{namesSpacing}}em / 100) 1em !important;
 }
 
 .playback {
     display: none;
+}
+
+.progress {
+    display: none !important;
 }

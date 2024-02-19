@@ -1,5 +1,7 @@
 Just making my own modifications to this to share with some folks I know
 
+The Credit Roll by Grot available on Stream Elements was heavily referenced for this conversion in order to limit credits only to the current session.
+
 # Thoanny's Original Readme
 
 [![](https://img.shields.io/badge/Linktr.ee-Thoanny-93c045?style=for-the-badge)](https://linktr.ee/thoanny)
